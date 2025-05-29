@@ -5,18 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Expense Tracker</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
-    <h1>Expense Tracker</h1>
+    <h1>💸 My Expense Tracker</h1>
+
     <form id="expense-form">
-      <input type="text" id="title" placeholder="Expense Title" required />
-      <input type="number" id="amount" placeholder="Amount" required />
+      <input type="text" id="title" placeholder="Enter expense title" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
       <input type="date" id="date" required />
-      <button type="submit">Add Expense</button>
+      <button type="submit">➕ Add Expense</button>
     </form>
 
-    <h2>Total: ₹<span id="total">0</span></h2>
+    <div class="total-section">
+      <h2>Total Spent: ₹<span id="total">0</span></h2>
+    </div>
 
     <table>
       <thead>
